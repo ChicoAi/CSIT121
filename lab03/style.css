@@ -1,0 +1,62 @@
+/* Lab 03: CSS Basics (external stylesheet) */
+
+/*Page Styling */
+body {
+    background-color: black;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin: 20px;
+}
+
+/*Headings */
+h1, h2, h3 {
+    color:orangered;
+}
+
+/*Paragraphs */ 
+p {
+    border: 4px orangered solid;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: darkorange;
+}
+
+/*Links */
+a:link {
+    color: orangered;
+}
+a:visited {
+    color: lightcoral;
+}
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+a:active {
+    color: grey;
+}
+
+/*ID Selector */
+.special {
+    color: orange;
+    font-weight: bold;
+}
+
+/*Class Selector */
+.special {
+    color: orange;
+    font-weight: bold;
+}
+
+
+/*Media query */
+@media (min-width: 30em) {
+    body { background-color: gray; }
+}
+
+/* Combinators */
+h1 + ul + p {
+    color: lightgray;
+}
+
