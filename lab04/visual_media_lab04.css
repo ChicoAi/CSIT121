@@ -1,0 +1,114 @@
+/* type */
+
+body {
+    font-family: 'Allan', cursive;
+    color: black;
+    font-size: 1.5em;;
+    background-color: grey;
+  background-image: url("images/silver_background.jpg");
+  margin: 0 auto;
+  width: 90%;
+  min-width: 900px;
+  max-width: 1200px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  text-align: center;
+  background-color: lightgrey;
+  border: 10px solid black;
+}
+
+
+.copyright {
+  font-size: 0.8em;
+}
+
+/* nav menu */
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  background-color: lightgrey;
+  border: 5px solid black;;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  flex: auto;
+}
+
+nav a {
+  font-size: 1.2em;
+  padding: 0 20px;
+}
+
+/* General link styles */
+
+a {
+  text-decoration: none;
+  color: purple;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* header section layout */
+
+header section {
+  display: grid;
+  grid-template-areas:
+    "Home"
+    "Courier Services"
+    "Ravens Nation";
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+h1 {
+  grid-area: heading;
+}
+
+header p {
+  grid-area: text;
+  margin: 0;
+}
+
+video {
+  grid-area: video;
+  width: 100%;
+  border: 1px solid black;
+}
+
+/* image floats */
+
+figure {
+  margin-left: 20px;
+  padding: 20px;
+  background: grey;
+  border: 20px solid black;
+}
+
+figcaption {
+  font-size: 1.0em;
+  color: black;
+  font-weight: bold;
+}
+
+
+.source {
+    text-align: right;
+  font-size: 0.6em;
+  display: block;
+  margin-top: 10px;
+}
