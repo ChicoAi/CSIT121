@@ -1,0 +1,111 @@
+/* ===== Reset ===== */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+/* ===== Page Styling ===== */
+body {
+  background-color: grey;
+  color: orange;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* ===== Readabiltity Enhancements ===== */
+body > .grid-container,
+body p,
+body ul,
+body h1 {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== Headings ===== */
+h1, h2, h3 {
+  color: orangered;
+  text-align: center;
+  margin: 1rem;
+}
+
+/* ===== Paragraphs ===== */
+p {
+  border: 4px orangered solid;
+  color: orange;
+  padding: 10px;
+  margin: 20px;
+  background-color: brown;
+}
+
+/* ===== Lists ===== */
+ul, ol {
+    text-align: center;
+  margin: 20px;
+  padding-left: 40px;
+  background-color: orangered;
+  border-color: whitesmoke;
+}
+
+/* Top navigation list */
+ul.menu {
+  list-style-type: none;;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: .5rem;
+  padding: 1rem;
+}
+ul.menu li { list-style: none; }
+ul.menu a {
+    display: block;
+    padding: .5rem .75rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* ===== Links ===== */
+a:link    { color: orange; }
+a:visited { color: lightcoral; }
+a:hover   { color: white; text-decoration: underline; }
+a:active  { color: grey; }
+
+/* ===== Class Selector ===== */
+.special {
+  color: orange;
+  font-weight: bold;
+}
+
+/* ===== Layout: Single-column ===== */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;   /* one column on mobile */
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Each grid cell */
+.grid-item {
+  background-color: brown;
+  color: orange;
+  border: 5px solid orangered;
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
+/* ===== Media Query===== */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* two columns on desktop */
+  }
+}
+
+/* ===== Combinator ===== */
+h1 + ul + p {
+  color: lightgray;
+}
+
+/* ===== Font Styling for large screens =====*/
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
